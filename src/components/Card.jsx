@@ -37,12 +37,12 @@ const Card = (
             <div className={`text-white ${className} h-[450px] w-72 rounded-2xl flex py-4 flex-col px-6 bg-zinc-400 bg-opacity-10 backdrop-blur-md border border-gray-600`}>
                 {profileImage && <img src={profileImage} alt='profile' className="w-16 h-16 rounded-full mb-4"/>}
                 <h2 className='text-xl font-bold'>{heading || `Lorem ipsum dolor sit amet consectetur, adipisicing elit.`}</h2>
-                <div className='flex justify-evenly items-center flex-wrap mt-5 relative right-3'>
+                <div className='flex justify-start items-center flex-wrap mt-5 relative right-3'>
                     {hashtags &&
                         hashtags.map((hashtag, index) => (
                             <div 
                                 key={index} 
-                                className={`bg-zinc-950 bg-opacity-30 border border-gray-500 rounded-lg px-[4px] py-1 m-1`}
+                                className={`bg-zinc-950 bg-opacity-30 border border-gray-500 rounded-lg px-[8px] py-1 m-1`}
                             >
                                 <p className='text-[13px]'>#{hashtag}</p> 
                             </div>    
@@ -68,6 +68,7 @@ const Card = (
                         <span> {disLikesCount}</span>
                     </button>
                 </div>
+                || <p className='mt-5 text-center text-gray-400'>Feedback disabled</p>
                 }
             </div>
         </>
