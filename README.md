@@ -1,7 +1,3 @@
-Here's a simple README for your project:
-
----
-
 # Simple Reusable Card Component
 
 This is a **React** and **Tailwind CSS** based reusable card component where users can upvote or downvote. Each card features a unique heading, background image, and relevant hashtags.
